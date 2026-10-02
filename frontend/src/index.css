@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+body { @apply bg-paper font-sans text-ink antialiased; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { @apply outline-2 outline-offset-2 outline-cobalt; outline-style: solid; }
+.input { @apply w-full border-b-2 border-rule bg-transparent px-0 py-2 focus:border-cobalt focus:outline-none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
